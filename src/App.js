@@ -10,7 +10,6 @@ function App() {
   const countries = useSelector((state) => state.countries);
   useEffect(() => {
     dispatch(getCountries('USD'));
-    console.log(countries);
   }, []);
 
   return (

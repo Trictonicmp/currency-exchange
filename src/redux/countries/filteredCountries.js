@@ -3,7 +3,7 @@ const FILTER_COUNTRIES_BY_NAME = 'currency-exchange/currencies/FILTER_CURRENCIES
 
 const filterCountries = (countries, search) => (
   countries.filter((country) => (
-    country.name.toLowerCase().indexOff(search.toLowerCase() >= 0)
+    country.name.toLowerCase().indexOf(search.toLowerCase()) >= 0
   ))
 );
 
