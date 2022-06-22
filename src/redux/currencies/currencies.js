@@ -1,3 +1,4 @@
+import { errorStatus, loadingStatus, successStatus } from '../app/appStatus';
 import getCountriesCurrencies from '../../API/CurrencyCountriesAPI';
 
 // Actions
@@ -5,12 +6,19 @@ const GET_CURRENCIES = 'currency-exchange/currencies/GET_CURRENCIES';
 
 // Action creators
 export const getCountries = (baseCurrency) => async (dispatch) => {
-  const countriesCurrencies = getCountriesCurrencies(baseCurrency, null);
+  let countriesCurrencies = [];
+  try {
+    dispatch(loadingStatus());
+    countriesCurrencies = getCountriesCurrencies(baseCurrency, null);
+  } catch (error) {
+    dispatch(errorStatus(error));
+  }
+
+  dispatch(successStatus);
   dispatch({
     type: GET_CURRENCIES,
     payload: countriesCurrencies,
   });
-  // dispatch()
 };
 
 // Reducer
