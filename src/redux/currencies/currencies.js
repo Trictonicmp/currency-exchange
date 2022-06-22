@@ -2,7 +2,7 @@ import { errorStatus, loadingStatus, successStatus } from '../app/appStatus';
 import getCountriesCurrencies from '../../API/CurrencyCountriesAPI';
 
 // Actions
-const GET_CURRENCIES = 'currency-exchange/currencies/GET_CURRENCIES';
+const GET_COUNTRIES = 'currency-exchange/currencies/GET_COUNTRIES';
 
 // Action creators
 export const getCountries = (baseCurrency) => async (dispatch) => {
@@ -15,7 +15,7 @@ export const getCountries = (baseCurrency) => async (dispatch) => {
   }
 
   dispatch({
-    type: GET_CURRENCIES,
+    type: GET_COUNTRIES,
     payload: countriesCurrencies,
   });
   dispatch(successStatus());
@@ -25,7 +25,7 @@ export const getCountries = (baseCurrency) => async (dispatch) => {
 const initialState = [];
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case GET_CURRENCIES:
+    case GET_COUNTRIES:
       // do something
       return action.payload;
     default:
