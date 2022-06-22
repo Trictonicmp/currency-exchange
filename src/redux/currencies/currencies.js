@@ -9,7 +9,7 @@ export const getCountries = (baseCurrency) => async (dispatch) => {
   let countriesCurrencies = [];
   try {
     dispatch(loadingStatus());
-    countriesCurrencies = getCountriesCurrencies(baseCurrency, null);
+    countriesCurrencies = await getCountriesCurrencies(baseCurrency);
   } catch (error) {
     dispatch(errorStatus(error));
   }

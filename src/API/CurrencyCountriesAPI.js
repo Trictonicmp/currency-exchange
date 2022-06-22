@@ -50,29 +50,23 @@ export const getWeekHistory = async (baseCurrency = 'USD') => {
   return data.rates;
 };
 
-const getCountriesCurrencies = async (baseCurrency, errorCallback) => {
-  const countriesCurrencies = [];
-  try {
-    const countries = await getCountriesData();
-    const currencies = await getCurrencies(baseCurrency);
-    const countriesWeekHistory = await getWeekHistory(baseCurrency);
+const getCountriesCurrencies = async (baseCurrency) => {
+  const countries = await getCountriesData();
+  const currencies = await getCurrencies(baseCurrency);
+  const countriesWeekHistory = await getWeekHistory(baseCurrency);
 
-    countries.forEach((country, index) => {
-      countries[index].todaysExchange = currencies[country.currencyCode];
-
-      const weekHistory = [];
-      Object.entries(countriesWeekHistory).forEach((day) => {
-        const history = { date: day[0], exchange: day[1][country.currencyCode] };
-        weekHistory.push(history);
-      });
-
-      countries[index].weekHistory = weekHistory;
+  countries.forEach((country, index) => {
+    countries[index].todaysExchange = currencies[country.currencyCode];
+    const weekHistory = [];
+    Object.entries(countriesWeekHistory).forEach((day) => {
+      const history = { date: day[0], exchange: day[1][country.currencyCode] };
+      weekHistory.push(history);
     });
-  } catch (error) {
-    errorCallback(error);
-  }
 
-  return countriesCurrencies;
+    countries[index].weekHistory = weekHistory;
+  });
+
+  return countries;
 };
 
 export default getCountriesCurrencies;
