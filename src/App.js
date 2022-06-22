@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getCountries } from './redux/countries/countries';
 import Details from './components/pages/Details';
 import Home from './components/pages/Home';
+import Header from './css/components/Header';
 
 function App() {
   const dispatch = useDispatch();
@@ -13,10 +14,13 @@ function App() {
   }, []);
 
   return (
-    <Routes>
-      <Route path="/" element={<Home countries={countries} />} />
-      <Route path="details" element={<Details />} />
-    </Routes>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home countries={countries} />} />
+        <Route path="details" element={<Details />} />
+      </Routes>
+    </>
   );
 }
 
