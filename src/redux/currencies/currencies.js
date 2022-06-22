@@ -14,11 +14,11 @@ export const getCountries = (baseCurrency) => async (dispatch) => {
     dispatch(errorStatus(error));
   }
 
-  dispatch(successStatus);
   dispatch({
     type: GET_CURRENCIES,
     payload: countriesCurrencies,
   });
+  dispatch(successStatus());
 };
 
 // Reducer
