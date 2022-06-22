@@ -1,4 +1,4 @@
-export const simplifyCountries = (countriesData) => {
+const simplifyCountries = (countriesData) => {
   const simplifiedCountries = [];
   countriesData.forEach((country) => {
     // console.log(country);
@@ -18,7 +18,7 @@ export const simplifyCountries = (countriesData) => {
   return simplifiedCountries;
 };
 
-export const getCountriesData = async (errorCallback) => {
+const getCountriesData = async (errorCallback) => {
   let countries = [];
   try {
     const response = await fetch('https://restcountries.com/v3.1/all');
@@ -28,4 +28,16 @@ export const getCountriesData = async (errorCallback) => {
     errorCallback(error);
   }
   return countries;
+};
+
+const getCurrencies = async (base, errorCallback = null) => {
+  let currencies = {};
+  try {
+    const response = await fetch(`https://api.exchangerate.host/latest?base=${base}`);
+    const data = await response.json();
+    currencies = data.rates;
+  } catch (error) {
+    errorCallback(error);
+  }
+  return currencies;
 };
