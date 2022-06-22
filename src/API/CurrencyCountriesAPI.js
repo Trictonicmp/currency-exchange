@@ -55,8 +55,18 @@ const getCountriesCurrencys = async (baseCurrency, errorCallback) => {
   try {
     const countries = await getCountriesData();
     const currencies = await getCurrencies(baseCurrency);
+    const countriesWeekHistory = await getWeekHistory(baseCurrency);
+
     countries.forEach((country, index) => {
       countries[index].todaysExchange = currencies[country.currencyCode];
+
+      const weekHistory = [];
+      Object.entries(countriesWeekHistory).forEach((day) => {
+        const history = { date: day[0], exchange: day[1][country.currencyCode] };
+        weekHistory.push(history);
+      });
+
+      countries[index].weekHistory = weekHistory;
     });
 
     console.log(countries);
