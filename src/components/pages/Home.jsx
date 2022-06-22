@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
-import { getCountriesData } from '../../API/CountriesAPI';
+import { getweekHistory } from '../../API/CurrencyCountriesAPI';
 
 const Home = () => {
   useEffect(() => {
-    console.log(getCountriesData());
+    console.log(getweekHistory());
   }, []);
 
   return (

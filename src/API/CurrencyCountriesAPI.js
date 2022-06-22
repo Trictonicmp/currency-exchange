@@ -1,7 +1,6 @@
 const simplifyCountries = (countriesData) => {
   const simplifiedCountries = [];
   countriesData.forEach((country) => {
-    // console.log(country);
     const simpleCountry = {
       name: '',
       currencyCode: '',
@@ -18,26 +17,48 @@ const simplifyCountries = (countriesData) => {
   return simplifiedCountries;
 };
 
-const getCountriesData = async (errorCallback) => {
+export const getCountriesData = async () => {
   let countries = [];
-  try {
-    const response = await fetch('https://restcountries.com/v3.1/all');
-    const data = await response.json();
-    countries = simplifyCountries(data);
-  } catch (error) {
-    errorCallback(error);
-  }
+  const response = await fetch('https://restcountries.com/v3.1/all');
+  const data = await response.json();
+  countries = simplifyCountries(data);
   return countries;
 };
 
-const getCurrencies = async (base, errorCallback = null) => {
+export const getCurrencies = async (base) => {
   let currencies = {};
+  const response = await fetch(`https://api.exchangerate.host/latest?base=${base}`);
+  const data = await response.json();
+  currencies = data.rates;
+  return currencies;
+};
+
+const getInitialAndFinalDate = () => {
+  const today = new Date();
+  const endDate = today.toISOString().split('T')[0];
+  // substract 7 days from today
+  today.setDate(today.getDate() - 7);
+  const startDate = today.toISOString().split('T')[0];
+
+  return [startDate, endDate];
+};
+
+export const getweekHistory = async (baseCurrency = 'USD') => {
+  const [startDate, endDate] = getInitialAndFinalDate();
+  const response = await fetch(`https://api.exchangerate.host/timeseries?start_date=${startDate}&end_date=${endDate}&base=${baseCurrency}`);
+  const data = await response.json();
+  return data.rates;
+};
+
+const getCountriesCurrencys = (baseCurrency, errorCallback) => {
+  const countriesCurrencies = [];
   try {
-    const response = await fetch(`https://api.exchangerate.host/latest?base=${base}`);
-    const data = await response.json();
-    currencies = data.rates;
+    console.log('h');
   } catch (error) {
     errorCallback(error);
   }
-  return currencies;
+
+  return countriesCurrencies;
 };
+
+export default getCountriesCurrencys;
