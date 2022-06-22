@@ -5,7 +5,8 @@ import { getFilteredCountries } from '../../redux/countries/filteredCountries';
 const Home = (props) => {
   const { countries } = props;
   const dispatch = useDispatch();
-  dispatch(getFilteredCountries(countries, 'Mex'));
+
+  dispatch(getFilteredCountries(countries, ''));
 
   return (
     <section>
