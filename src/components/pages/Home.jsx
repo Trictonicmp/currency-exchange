@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getFilteredCountries } from '../../redux/countries/filteredCountries';
+import BaseCurrency from '../BaseCurrency';
 
 const Home = (props) => {
   const { countries } = props;
@@ -10,6 +11,7 @@ const Home = (props) => {
 
   return (
     <section>
+      <BaseCurrency />
       <h1>Home</h1>
       {
         // appStatus === 'LOADING' ? <p>loading</p> : <p>loaded</p>
