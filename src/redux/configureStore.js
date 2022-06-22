@@ -2,7 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import currencies from './currencies/currencies';
 
 const store = configureStore({
-  reducers: {
+  reducer: {
     currencies,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware(),

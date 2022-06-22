@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
-import getCountriesCurrencys from '../../API/CurrencyCountriesAPI';
+import { useSelector } from 'react-redux/es/exports';
 
 const Home = () => {
+  const state = useSelector((state) => state.currencies);
   useEffect(() => {
-    console.log(getCountriesCurrencys('USD'));
+    console.log(state);
   }, []);
 
   return (
