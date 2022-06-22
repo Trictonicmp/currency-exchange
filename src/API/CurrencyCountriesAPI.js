@@ -50,7 +50,7 @@ export const getWeekHistory = async (baseCurrency = 'USD') => {
   return data.rates;
 };
 
-const getCountriesCurrencys = async (baseCurrency, errorCallback) => {
+const getCountriesCurrencies = async (baseCurrency, errorCallback) => {
   const countriesCurrencies = [];
   try {
     const countries = await getCountriesData();
@@ -68,8 +68,6 @@ const getCountriesCurrencys = async (baseCurrency, errorCallback) => {
 
       countries[index].weekHistory = weekHistory;
     });
-
-    console.log(countries);
   } catch (error) {
     errorCallback(error);
   }
@@ -77,4 +75,4 @@ const getCountriesCurrencys = async (baseCurrency, errorCallback) => {
   return countriesCurrencies;
 };
 
-export default getCountriesCurrencys;
+export default getCountriesCurrencies;

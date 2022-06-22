@@ -1,9 +1,15 @@
+import getCountriesCurrencies from '../../API/CurrencyCountriesAPI';
+
 // Actions
 const GET_CURRENCIES = 'currency-exchange/currencies/GET_CURRENCIES';
 
 // Action creators
-const getCountriesCurrencies = () => async (dispatch) => {
-  // do something
+export const getCountries = (baseCurrency) => async (dispatch) => {
+  const countriesCurrencies = getCountriesCurrencies(baseCurrency, null);
+  dispatch({
+    type: GET_CURRENCIES,
+    payload: countriesCurrencies,
+  });
   // dispatch()
 };
 
@@ -13,7 +19,7 @@ const reducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_CURRENCIES:
       // do something
-      return [];
+      return action.payload;
     default:
       return state;
   }
