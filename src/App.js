@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getCountries } from './redux/countries/countries';
 import Details from './components/pages/Details';
 import Home from './components/pages/Home';
-import Header from './css/components/Header';
+import Header from './components/Header';
 
 function App() {
   const dispatch = useDispatch();

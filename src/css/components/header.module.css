@@ -1,0 +1,12 @@
+.header {
+  padding: 1em 0;
+  background-color: var(--main-background);
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5em;
+}
