@@ -1,8 +1,15 @@
+import { getCountries } from './currencies';
+
 // Actions
 const CHANGE_BASE = 'currency-exchange/currencies/CHANGE_BASE';
 
-export const changeBase = (baseCurrency) => ({ type: CHANGE_BASE, payload: baseCurrency });
+// Action creators
+export const changeBase = (baseCurrency) => async (dispatch) => {
+  dispatch(getCountries(baseCurrency));
+  dispatch({ type: CHANGE_BASE, payload: baseCurrency });
+};
 
+// Reducer
 const reducer = (state = 'USD', action) => {
   switch (action.type) {
     case CHANGE_BASE:
