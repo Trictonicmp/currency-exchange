@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
-import { getweekHistory } from '../../API/CurrencyCountriesAPI';
+import getCountriesCurrencys from '../../API/CurrencyCountriesAPI';
 
 const Home = () => {
   useEffect(() => {
-    console.log(getweekHistory());
+    console.log(getCountriesCurrencys('USD'));
   }, []);
 
   return (

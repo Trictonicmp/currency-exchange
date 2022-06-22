@@ -17,7 +17,7 @@ const simplifyCountries = (countriesData) => {
   return simplifiedCountries;
 };
 
-export const getCountriesData = async () => {
+const getCountriesData = async () => {
   let countries = [];
   const response = await fetch('https://restcountries.com/v3.1/all');
   const data = await response.json();
@@ -43,17 +43,23 @@ const getInitialAndFinalDate = () => {
   return [startDate, endDate];
 };
 
-export const getweekHistory = async (baseCurrency = 'USD') => {
+export const getWeekHistory = async (baseCurrency = 'USD') => {
   const [startDate, endDate] = getInitialAndFinalDate();
   const response = await fetch(`https://api.exchangerate.host/timeseries?start_date=${startDate}&end_date=${endDate}&base=${baseCurrency}`);
   const data = await response.json();
   return data.rates;
 };
 
-const getCountriesCurrencys = (baseCurrency, errorCallback) => {
+const getCountriesCurrencys = async (baseCurrency, errorCallback) => {
   const countriesCurrencies = [];
   try {
-    console.log('h');
+    const countries = await getCountriesData();
+    const currencies = await getCurrencies(baseCurrency);
+    countries.forEach((country, index) => {
+      countries[index].todaysExchange = currencies[country.currencyCode];
+    });
+
+    console.log(countries);
   } catch (error) {
     errorCallback(error);
   }
