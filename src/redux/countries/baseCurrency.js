@@ -1,4 +1,4 @@
-import { getCountries } from './currencies';
+import { getCountries } from './countries';
 
 // Actions
 const CHANGE_BASE = 'currency-exchange/currencies/CHANGE_BASE';
