@@ -5,12 +5,15 @@ import { getFilteredCountries } from './filteredCountries';
 // Actions
 const GET_COUNTRIES = 'currency-exchange/currencies/GET_COUNTRIES';
 
+const orderCountries = (countries) => [...countries].sort((a, b) => (a.name < b.name ? -1 : 1));
+
 // Action creators
 export const getCountries = (baseCurrency) => async (dispatch) => {
   let countriesCurrencies = [];
   try {
     dispatch(loadingStatus());
     countriesCurrencies = await getCountriesCurrencies(baseCurrency);
+    countriesCurrencies = orderCountries(countriesCurrencies);
   } catch (error) {
     dispatch(errorStatus(error));
   }
