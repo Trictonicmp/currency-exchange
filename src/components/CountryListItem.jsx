@@ -1,10 +1,13 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { selectCountry } from '../redux/selectedItem/selectedITem';
 import styles from '../css/components/countriesListItem.module.css';
 import rightArrow from '../assets/images/right-arrow.png';
 
 const CountryListItem = (props) => {
   const { country, baseCurrency } = props;
+  const dispatch = useDispatch();
   return (
     <li className={styles.listItem}>
       <Link
@@ -14,6 +17,7 @@ const CountryListItem = (props) => {
         ${styles.pageContainer}
         ${styles.listItemDetails}
         `}
+        onClick={() => dispatch(selectCountry(country))}
       >
         <div className={styles.countryDetails}>
           <span className={styles.countryFlag}>{country.flag}</span>
