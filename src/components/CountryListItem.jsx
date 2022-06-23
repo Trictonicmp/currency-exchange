@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { selectCountry } from '../redux/selectedItem/selectedITem';
 import styles from '../css/components/countriesListItem.module.css';
@@ -8,6 +8,13 @@ import rightArrow from '../assets/images/right-arrow.png';
 const CountryListItem = (props) => {
   const { country, baseCurrency } = props;
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleLinkClick = () => {
+    dispatch(selectCountry(country));
+    navigate(1);
+  };
+
   return (
     <li className={styles.listItem}>
       <Link
@@ -17,7 +24,7 @@ const CountryListItem = (props) => {
         ${styles.pageContainer}
         ${styles.listItemDetails}
         `}
-        onClick={() => dispatch(selectCountry(country))}
+        onClick={handleLinkClick}
       >
         <div className={styles.countryDetails}>
           <span className={styles.countryFlag}>{country.flag}</span>

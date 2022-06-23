@@ -3,7 +3,6 @@ import styles from '../css/components/weekHistory.module.css';
 
 const WeekHistory = (props) => {
   const { weekHistory } = props;
-  console.log(weekHistory);
 
   return (
     <ul className={`pageContainer ${styles.pagecontainer}`}>
