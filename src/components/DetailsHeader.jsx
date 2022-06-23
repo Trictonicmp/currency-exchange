@@ -7,6 +7,7 @@ const DetailsHeader = (props) => {
     flag,
     todaysExchange,
     baseCurrency,
+    currency,
   } = props;
 
   return (
@@ -15,6 +16,10 @@ const DetailsHeader = (props) => {
       <div>
         <span>Country</span>
         <h2>{ name }</h2>
+      </div>
+      <div>
+        <span>Currency</span>
+        <h2>{ currency }</h2>
       </div>
       <div>
         <span>{`Today's exchange | based on: 1 ${baseCurrency}`}</span>
@@ -29,6 +34,7 @@ DetailsHeader.propTypes = {
   flag: PropTypes.string,
   todaysExchange: PropTypes.number,
   baseCurrency: PropTypes.string,
+  currency: PropTypes.string,
 };
 
 DetailsHeader.defaultProps = {
@@ -36,6 +42,7 @@ DetailsHeader.defaultProps = {
   flag: '⚠️',
   todaysExchange: 0,
   baseCurrency: '',
+  currency: '',
 };
 
 export default DetailsHeader;

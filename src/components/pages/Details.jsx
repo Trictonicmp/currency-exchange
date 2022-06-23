@@ -22,6 +22,7 @@ const Details = () => {
           flag={country.flag}
           todaysExchange={country.todaysExchange}
           baseCurrency={baseCurrency}
+          currency={country.currencyCode}
         />
       </div>
       <div className={styles.historyHeader}>
