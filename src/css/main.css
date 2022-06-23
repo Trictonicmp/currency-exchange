@@ -11,7 +11,7 @@
 
 .pageContainer {
   width: calc(100% - 2em);
-  max-width: 1300px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 

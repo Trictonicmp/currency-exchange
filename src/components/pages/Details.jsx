@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import DetailsHeader from '../DetailsHeader';
+import WeekHistory from '../WeekHistory';
 import styles from '../../css/components/details.module.css';
 
 const Details = () => {
@@ -18,6 +19,7 @@ const Details = () => {
       <div className={styles.historyHeader}>
         <h2>This week&apos;s exchange</h2>
       </div>
+      <WeekHistory weekHistory={country.weekHistory} />
     </section>
   );
 };
