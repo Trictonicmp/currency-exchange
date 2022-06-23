@@ -5,6 +5,7 @@ const Details = () => {
   console.log(country);
   return (
     <section>
+      <DetailsHeader country={country.name} flag={country.flag} />
       <h1>Details</h1>
     </section>
   );
