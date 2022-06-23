@@ -6,7 +6,6 @@ import Details from './components/pages/Details';
 import Home from './components/pages/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { getFilteredCountries } from './redux/countries/filteredCountries';
 
 function App() {
   const dispatch = useDispatch();
@@ -14,7 +13,6 @@ function App() {
   const baseCurrency = useSelector((state) => state.baseCurrency);
   useEffect(() => {
     dispatch(getCountries('USD'));
-    dispatch(getFilteredCountries(countries, ''));
   }, []);
 
   return (
