@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import styles from '../css/components/countriesListItem.module.css';
+import rightArrow from '../assets/images/right-arrow.png';
 
 const CountryListItem = (props) => {
   const { country, baseCurrency } = props;
@@ -30,6 +31,7 @@ const CountryListItem = (props) => {
             </span>
           </div>
         </div>
+        <img src={rightArrow} alt=">" className={styles.detailsIcon} />
       </Link>
     </li>
   );
