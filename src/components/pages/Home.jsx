@@ -29,6 +29,7 @@ Home.propTypes = {
   countries: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
     flag: PropTypes.string,
+    currencyCode: PropTypes.string,
     todaysExchange: PropTypes.number,
     weekHistory: PropTypes.arrayOf(PropTypes.shape({
       date: PropTypes.string,
