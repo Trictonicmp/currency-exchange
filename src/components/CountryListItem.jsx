@@ -8,7 +8,7 @@ const CountryListItem = (props) => {
   return (
     <li className={styles.listItem}>
       <Link
-        to="details"
+        to={`details?country=${country.name}`}
         className={`
         pageContainer
         ${styles.pageContainer}
