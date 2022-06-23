@@ -1,10 +1,11 @@
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
+import { changeBase } from '../redux/countries/baseCurrency';
 import styles from '../css/components/baseCurrency.module.css';
 
 const Filters = (props) => {
+  const dispatch = useDispatch();
   const { countries, baseCurrency } = props;
-  console.log('00');
-
   const orderedCountries = countries.sort((a, b) => (a.name < b.name ? -1 : 1));
 
   const options = [];
@@ -19,11 +20,18 @@ const Filters = (props) => {
     );
   });
 
+  const changeBaseCurrency = (event) => {
+    event.preventDefault();
+    const newBase = event.target.value;
+    console.log(newBase);
+    dispatch(changeBase(newBase));
+  };
+
   return (
     <div className={`${styles.filtersSection}`}>
       <div className={`pageContainer ${styles.pageContainer}`}>
         <h2>Base Currency</h2>
-        <select className={`${styles.select}`} value={baseCurrency}>
+        <select className={`${styles.select}`} value={baseCurrency} onChange={changeBaseCurrency}>
           { options }
         </select>
         <input type="text" placeholder="Search" className={`${styles.search}`} />

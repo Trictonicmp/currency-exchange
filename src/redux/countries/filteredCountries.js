@@ -1,11 +1,13 @@
 // Action
-const FILTER_COUNTRIES_BY_NAME = 'currency-exchange/currencies/FILTER_CURRENCIES';
+const FILTER_COUNTRIES_BY_NAME = 'currency-exchange/currencies/FILTER_COUNTRIES_BY_NAME';
 
-const filterCountries = (countries, search) => (
-  countries.filter((country) => (
+const filterCountries = (countries, search) => {
+  if (search === '') return countries;
+
+  return countries.filter((country) => (
     country.name.toLowerCase().indexOf(search.toLowerCase()) >= 0
-  ))
-);
+  ));
+};
 
 // Action creator
 export const getFilteredCountries = (countries, search) => async (dispatch) => (

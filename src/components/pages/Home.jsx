@@ -6,7 +6,7 @@ import Filters from '../Filters';
 import CountriesList from '../CountriesList';
 
 const Home = (props) => {
-  const { countries, baseCurrency } = props;
+  const { filteredCountries, countries, baseCurrency } = props;
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const Home = (props) => {
   return (
     <section>
       <Filters countries={countries} baseCurrency={baseCurrency} />
-      <CountriesList countries={countries} />
+      <CountriesList countries={filteredCountries} />
       {
         // appStatus === 'LOADING' ? <p>loading</p> : <p>loaded</p>
         'Hey'
@@ -27,6 +27,16 @@ const Home = (props) => {
 
 Home.propTypes = {
   countries: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    flag: PropTypes.string,
+    currencyCode: PropTypes.string,
+    todaysExchange: PropTypes.number,
+    weekHistory: PropTypes.arrayOf(PropTypes.shape({
+      date: PropTypes.string,
+      exchange: PropTypes.number,
+    })),
+  })).isRequired,
+  filteredCountries: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
     flag: PropTypes.string,
     currencyCode: PropTypes.string,
