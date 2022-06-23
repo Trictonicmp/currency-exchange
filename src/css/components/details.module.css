@@ -3,13 +3,37 @@
 }
 
 .historyHeader {
+  display: flex;
   background-color: var(--accent-color);
   padding: 1em 0;
 }
 
 .historyHeader h2 {
+  width: calc(100% - 2em);
+  float: right;
   text-align: center;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: var(--body-background);
+}
+
+.historyHeader button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 2em;
+}
+
+.historyHeader button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.historyHeader button:hover img {
+  opacity: 1;
+}
+
+.historyHeader button img {
+  opacity: 0.5;
+  width: 100%;
 }

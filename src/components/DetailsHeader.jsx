@@ -17,7 +17,7 @@ const DetailsHeader = (props) => {
         <h2>{ name }</h2>
       </div>
       <div>
-        <span>{`Exchange | based on: 1 ${baseCurrency}`}</span>
+        <span>{`Today's exchange | based on: 1 ${baseCurrency}`}</span>
         <h2>{ todaysExchange }</h2>
       </div>
     </div>
