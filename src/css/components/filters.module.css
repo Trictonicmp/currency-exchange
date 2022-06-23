@@ -1,5 +1,6 @@
 .filtersSection {
   padding: 1em 0;
+  margin-bottom: 2px;
   background-color: var(--accent-color);
   position: sticky;
   top: 0;

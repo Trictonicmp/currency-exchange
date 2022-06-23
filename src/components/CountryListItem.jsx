@@ -18,7 +18,18 @@ const CountryListItem = (props) => {
           <span className={styles.countryFlag}>{country.flag}</span>
           <h3 className={styles.countryName}>{country.name}</h3>
         </div>
-        <h4>{`1 ${baseCurrency} = ${country.todaysExchange} ${country.currencyCode}`}</h4>
+        <div className={styles.countryExchangeContainer}>
+          <p>Exchange</p>
+          <div className={styles.countryExchange}>
+            <span>
+              {`1 ${baseCurrency}`}
+            </span>
+            =
+            <span>
+              {`${country.todaysExchange} ${country.currencyCode}`}
+            </span>
+          </div>
+        </div>
       </Link>
     </li>
   );
