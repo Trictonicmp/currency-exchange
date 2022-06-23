@@ -1,3 +1,15 @@
 .header {
   background-color: var(--body-background);
 }
+
+.historyHeader {
+  background-color: var(--accent-color);
+  padding: 1em 0;
+}
+
+.historyHeader h2 {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: var(--body-background);
+}

@@ -15,7 +15,9 @@ const Details = () => {
           baseCurrency={baseCurrency}
         />
       </div>
-      <h1>Details</h1>
+      <div className={styles.historyHeader}>
+        <h2>This week&apos;s exchange</h2>
+      </div>
     </section>
   );
 };
