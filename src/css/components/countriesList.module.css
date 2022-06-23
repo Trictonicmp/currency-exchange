@@ -7,3 +7,22 @@
 .countriesList {
   width: 100%;
 }
+
+.loading li {
+  position: relative;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.0) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.0) 100%);
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: loadAnimation;
+  animation-timing-function: ease-out;
+}
+
+@keyframes loadAnimation {
+  0%{
+      background-position: -468px 0
+  }
+  100%{
+      background-position: 468px 0
+  }
+}
