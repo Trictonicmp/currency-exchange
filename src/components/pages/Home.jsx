@@ -2,7 +2,8 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { getFilteredCountries } from '../../redux/countries/filteredCountries';
-import BaseCurrency from '../BaseCurrency';
+import Filters from '../Filters';
+import CountriesList from '../CountriesList';
 
 const Home = (props) => {
   const { countries, baseCurrency } = props;
@@ -14,10 +15,8 @@ const Home = (props) => {
 
   return (
     <section>
-      <BaseCurrency countries={countries} baseCurrency={baseCurrency} />
-      <div>
-        p
-      </div>
+      <Filters countries={countries} baseCurrency={baseCurrency} />
+      <CountriesList countries={countries} />
       {
         // appStatus === 'LOADING' ? <p>loading</p> : <p>loaded</p>
         'Hey'

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styles from '../css/components/baseCurrency.module.css';
 
-const BaseCurrency = (props) => {
+const Filters = (props) => {
   const { countries, baseCurrency } = props;
   console.log('00');
 
@@ -32,7 +32,7 @@ const BaseCurrency = (props) => {
   );
 };
 
-BaseCurrency.propTypes = {
+Filters.propTypes = {
   countries: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
     flag: PropTypes.string,
@@ -45,4 +45,4 @@ BaseCurrency.propTypes = {
   baseCurrency: PropTypes.string.isRequired,
 };
 
-export default BaseCurrency;
+export default Filters;
