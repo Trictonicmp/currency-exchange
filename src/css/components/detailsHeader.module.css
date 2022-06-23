@@ -1,0 +1,28 @@
+.detailsHeader {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.detailsHeader div {
+  display: flex;
+  flex-direction: column;
+}
+
+.detailsHeader div span {
+  font-family: 'Lato', sans-serif;
+  color: var(--accent-color);
+}
+
+.detailsHeader div h2 {
+  color: var(--text-color);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+.detailsHeader h3 {
+  font-size: 4em;
+}
