@@ -1,18 +1,23 @@
 import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { getFilteredCountries } from '../../redux/countries/filteredCountries';
 import BaseCurrency from '../BaseCurrency';
 
 const Home = (props) => {
-  const { countries } = props;
+  const { countries, baseCurrency } = props;
   const dispatch = useDispatch();
 
-  dispatch(getFilteredCountries(countries, ''));
+  useEffect(() => {
+    dispatch(getFilteredCountries(countries, ''));
+  }, []);
 
   return (
     <section>
-      <BaseCurrency />
-      <h1>Home</h1>
+      <BaseCurrency countries={countries} baseCurrency={baseCurrency} />
+      <div>
+        p
+      </div>
       {
         // appStatus === 'LOADING' ? <p>loading</p> : <p>loaded</p>
         'Hey'
@@ -31,6 +36,7 @@ Home.propTypes = {
       exchange: PropTypes.number,
     })),
   })).isRequired,
+  baseCurrency: PropTypes.string.isRequired,
 };
 
 export default Home;

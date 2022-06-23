@@ -1,39 +1,48 @@
-import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
+import styles from '../css/components/baseCurrency.module.css';
 
-const BaseCurrency = () => {
-  const countries = useSelector((state) => state.countries);
-  const baseCurrency = useSelector((state) => state.baseCurrency);
+const BaseCurrency = (props) => {
+  const { countries, baseCurrency } = props;
   console.log('00');
 
   const orderedCountries = countries.sort((a, b) => (a.name < b.name ? -1 : 1));
 
   const options = [];
-  let currencyFound = false;
   orderedCountries.forEach((country) => {
-    if (country.currencyCode === baseCurrency && !currencyFound) {
-      options.push(
-        <option value={country.currencyCode} selected>
-          {`${country.currencyCode} - ${country.name}`}
-        </option>,
-      );
-      currencyFound = true;
-    } else {
-      options.push(
-        <option value={country.currencyCode}>
-          {`${country.currencyCode} - ${country.name}`}
-        </option>,
-      );
-    }
+    options.push(
+      <option
+        value={country.currencyCode}
+        key={`${country.currencyCode}${country.name}`}
+      >
+        {`${country.currencyCode} - ${country.name}`}
+      </option>,
+    );
   });
 
   return (
-    <div>
-      <h2>Base Currency</h2>
-      <select>
-        { options }
-      </select>
+    <div className={`${styles.filtersSection}`}>
+      <div className={`pageContainer ${styles.pageContainer}`}>
+        <h2>Base Currency</h2>
+        <select className={`${styles.select}`} value={baseCurrency}>
+          { options }
+        </select>
+        <input type="text" placeholder="Search" className={`${styles.search}`} />
+      </div>
     </div>
   );
+};
+
+BaseCurrency.propTypes = {
+  countries: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    flag: PropTypes.string,
+    todaysExchange: PropTypes.number,
+    weekHistory: PropTypes.arrayOf(PropTypes.shape({
+      date: PropTypes.string,
+      exchange: PropTypes.number,
+    })),
+  })).isRequired,
+  baseCurrency: PropTypes.string.isRequired,
 };
 
 export default BaseCurrency;

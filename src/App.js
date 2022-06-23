@@ -9,6 +9,7 @@ import Header from './components/Header';
 function App() {
   const dispatch = useDispatch();
   const countries = useSelector((state) => state.countries);
+  const baseCurrency = useSelector((state) => state.baseCurrency);
   useEffect(() => {
     dispatch(getCountries('USD'));
   }, []);
@@ -17,7 +18,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home countries={countries} />} />
+        <Route path="/" element={<Home countries={countries} baseCurrency={baseCurrency} />} />
         <Route path="details" element={<Details />} />
       </Routes>
     </>
