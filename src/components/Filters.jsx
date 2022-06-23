@@ -6,7 +6,7 @@ import styles from '../css/components/baseCurrency.module.css';
 const Filters = (props) => {
   const dispatch = useDispatch();
   const { countries, baseCurrency } = props;
-  const orderedCountries = countries.sort((a, b) => (a.name < b.name ? -1 : 1));
+  const orderedCountries = [...countries].sort((a, b) => (a.name < b.name ? -1 : 1));
 
   const options = [];
   orderedCountries.forEach((country) => {
@@ -23,7 +23,6 @@ const Filters = (props) => {
   const changeBaseCurrency = (event) => {
     event.preventDefault();
     const newBase = event.target.value;
-    console.log(newBase);
     dispatch(changeBase(newBase));
   };
 
