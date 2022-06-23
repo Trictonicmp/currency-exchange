@@ -5,6 +5,7 @@ import { getCountries } from './redux/countries/countries';
 import Details from './components/pages/Details';
 import Home from './components/pages/Home';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import { getFilteredCountries } from './redux/countries/filteredCountries';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<Home countries={countries} baseCurrency={baseCurrency} />} />
         <Route path="details" element={<Details />} />
       </Routes>
+      <Footer />
     </>
   );
 }

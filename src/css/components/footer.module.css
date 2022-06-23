@@ -1,0 +1,29 @@
+.footer {
+  background-color: #333;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color: #888;
+}
+
+.footer div {
+  padding: 3em 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  background-color: #282828;
+  color: rgb(44, 97, 146);
+  border-radius: 0.2em;
+  font-size: 0.8em;
+  margin: 0 0.5em;
+}
+
+.linkBadge {
+  text-decoration: none;
+  color: var(--body-background);
+}
+
+.linkBadge:hover {
+  transform: scale(1.04);
+}
