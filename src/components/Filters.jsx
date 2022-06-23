@@ -2,6 +2,7 @@ import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { changeBase } from '../redux/countries/baseCurrency';
 import styles from '../css/components/baseCurrency.module.css';
+import { getFilteredCountries } from '../redux/countries/filteredCountries';
 
 const Filters = (props) => {
   const dispatch = useDispatch();
@@ -21,9 +22,13 @@ const Filters = (props) => {
   });
 
   const changeBaseCurrency = (event) => {
-    event.preventDefault();
     const newBase = event.target.value;
     dispatch(changeBase(newBase));
+  };
+
+  const filterCountries = (event) => {
+    const search = event.target.value;
+    dispatch(getFilteredCountries(countries, search));
   };
 
   return (
@@ -33,7 +38,7 @@ const Filters = (props) => {
         <select className={`${styles.select}`} value={baseCurrency} onChange={changeBaseCurrency}>
           { options }
         </select>
-        <input type="text" placeholder="Search" className={`${styles.search}`} />
+        <input type="text" placeholder="Search" className={`${styles.search}`} onChange={filterCountries} />
       </div>
     </div>
   );

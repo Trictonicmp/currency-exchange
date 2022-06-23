@@ -1,5 +1,6 @@
 import { errorStatus, loadingStatus, successStatus } from '../app/appStatus';
 import getCountriesCurrencies from '../../API/CurrencyCountriesAPI';
+import { getFilteredCountries } from './filteredCountries';
 
 // Actions
 const GET_COUNTRIES = 'currency-exchange/currencies/GET_COUNTRIES';
@@ -18,6 +19,7 @@ export const getCountries = (baseCurrency) => async (dispatch) => {
     type: GET_COUNTRIES,
     payload: countriesCurrencies,
   });
+  dispatch(getFilteredCountries(countriesCurrencies, ''));
   dispatch(successStatus());
 };
 

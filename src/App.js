@@ -10,7 +10,6 @@ import { getFilteredCountries } from './redux/countries/filteredCountries';
 function App() {
   const dispatch = useDispatch();
   const countries = useSelector((state) => state.countries);
-  const filteredCountries = useSelector((state) => state.filteredCountries);
   const baseCurrency = useSelector((state) => state.baseCurrency);
   useEffect(() => {
     dispatch(getCountries('USD'));
@@ -21,7 +20,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home filteredCountries={filteredCountries} countries={countries} baseCurrency={baseCurrency} />} />
+        <Route path="/" element={<Home countries={countries} baseCurrency={baseCurrency} />} />
         <Route path="details" element={<Details />} />
       </Routes>
     </>
