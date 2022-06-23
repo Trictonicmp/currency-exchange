@@ -5,8 +5,10 @@ import { Provider } from 'react-redux';
 import store from './redux/configureStore';
 import App from './App';
 import './css/main.css';
+import { getCountries } from './redux/countries/countries';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+store.dispatch(getCountries('USD'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
