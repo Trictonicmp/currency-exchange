@@ -1,6 +1,8 @@
 .filtersSection {
   padding: 1em 0;
   background-color: var(--accent-color);
+  position: sticky;
+  top: 0;
 }
 
 .pageContainer {

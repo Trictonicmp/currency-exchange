@@ -17,7 +17,6 @@ const Home = (props) => {
   return (
     <section>
       <Filters countries={countries} baseCurrency={baseCurrency} />
-      <TableHeader />
       <CountriesList countries={filteredCountries} baseCurrency={baseCurrency} />
       {
         // appStatus === 'LOADING' ? <p>loading</p> : <p>loaded</p>

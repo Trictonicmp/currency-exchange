@@ -6,6 +6,7 @@
   --secondary-background: #de4781;
   --accent-color: #b03967;
   --text-color: white;
+  --body-background: #ff9ec3;
 }
 
 .pageContainer {
@@ -16,4 +17,8 @@
 
 section {
   width: 100%;
+}
+
+body {
+  background-color: var(--body-background);
 }
