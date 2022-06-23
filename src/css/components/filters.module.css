@@ -18,7 +18,7 @@
   flex-shrink: 1;
   flex-grow: 1;
   flex-basis: 5em;
-  max-width: 5em;
+  max-width: 4.2em;
   padding: 0.5em;
   margin-right: 25%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -26,6 +26,7 @@
   color: var(--text-color);
   border: none;
   border-radius: 0.2em;
+  font-size: 1.2em;
 }
 
 .select:hover {
@@ -36,7 +37,7 @@
   flex-shrink: 1;
   flex-grow: 1;
   flex-basis: 15em;
-  max-width: 25em;
+  max-width: 40em;
   padding: 0.5em 0.5em 0.5em 2.5em;
   border: none;
   border-radius: 0.2em;
@@ -46,6 +47,7 @@
   background-size: 1em;
   background-repeat: no-repeat;
   color: white;
+  font-size: 1.2em;
 }
 
 .search:hover,

@@ -3,18 +3,22 @@ import CountryListItem from './CountryListItem';
 import styles from '../css/components/countriesList.module.css';
 
 const CountriesList = (props) => {
-  const { countries } = props;
+  const { countries, baseCurrency } = props;
 
   const listItems = [];
   countries.forEach((country) => {
     listItems.push(
-      <CountryListItem country={country} key={`${country.name}${country.currencyCode}`} />,
+      <CountryListItem
+        country={country}
+        key={`${country.name}${country.currencyCode}`}
+        baseCurrency={baseCurrency}
+      />,
     );
   });
 
   return (
-    <div className={`${styles.countriesList}`}>
-      <ul className="pageContainer">
+    <div className={`${styles.countriesListContainer}`}>
+      <ul className={`${styles.countriesList}`}>
         { listItems }
       </ul>
     </div>
@@ -32,6 +36,7 @@ CountriesList.propTypes = {
       exchange: PropTypes.number,
     })),
   })).isRequired,
+  baseCurrency: PropTypes.string.isRequired,
 };
 
 export default CountriesList;

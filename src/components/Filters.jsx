@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { changeBase } from '../redux/countries/baseCurrency';
-import styles from '../css/components/baseCurrency.module.css';
+import styles from '../css/components/filters.module.css';
 import { getFilteredCountries } from '../redux/countries/filteredCountries';
 
 const Filters = (props) => {

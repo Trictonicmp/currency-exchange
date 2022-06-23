@@ -1,0 +1,40 @@
+.listItem {
+  width: 100%;
+  background-color: var(--main-background);
+  background-image: url(../../assets/images/backgroundpattern.png);
+  background-size: 0.5em;
+}
+
+.listItem:nth-child(even) {
+  background-color: var(--secondary-background);
+}
+
+.pageContainer {
+  padding: 1.5em 1em;
+  display: block;
+  text-decoration: none;
+}
+
+.countryName {
+  font-family: 'Lato', sans-serif;
+  color: var(--text-color);
+  font-weight: lighter;
+  font-size: 1.5em;
+}
+
+.listItemDetails {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.countryFlag {
+  vertical-align: baseline;
+  font-size: 2em;
+}
+
+.countryDetails {
+  display: flex;
+  gap: 1em;
+}
