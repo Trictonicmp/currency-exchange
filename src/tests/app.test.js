@@ -1,15 +1,16 @@
-import { render } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import '@testing-library/jest-dom/extend-expect';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import App from '../App';
-
 import countries from '../redux/countries/countries';
 import appStatus from '../redux/app/appStatus';
 import baseCurrency from '../redux/countries/baseCurrency';
-import filteredCountries from '../redux/countries/filteredCountries';
+import filteredCountries, { getFilteredCountries } from '../redux/countries/filteredCountries';
 import selectedCountry from '../redux/selectedItem/selectedITem';
+import App from '../App';
+import Home from '../components/pages/Home';
+import Details from '../components/pages/Details';
 
 const { configureStore } = require('@reduxjs/toolkit');
 
@@ -131,33 +132,78 @@ describe('App snapshots', () => {
     expect(app).toMatchSnapshot();
   });
 
-  test('It should render the Rockets page', () => {
+  test('It should render the Home', () => {
+    const countries = [
+      {
+        name: 'Afghanistan',
+        currencyCode: 'AFN',
+        flag: '🇦🇫',
+        todaysExchange: 89.230209,
+        weekHistory: [
+          {
+            date: '2022-06-17',
+            exchange: 88.9083,
+          },
+          {
+            date: '2022-06-16',
+            exchange: 89.272511,
+          },
+        ],
+      },
+      {
+        name: 'Mexico',
+        currencyCode: 'MXN',
+        flag: '🇦🇫🇲🇽',
+        todaysExchange: 20.24042,
+        weekHistory: [
+          {
+            date: '2022-06-17',
+            exchange: 20.423423,
+          },
+          {
+            date: '2022-06-16',
+            exchange: 20.316285,
+          },
+        ],
+      },
+    ];
     const store = createStore();
-    const rocketsPage = render(
+    const app = render(
       <Provider store={store}>
-        <Rockets />
+        <BrowserRouter>
+          <Home countries={countries} baseCurrency="USD" />
+        </BrowserRouter>
       </Provider>,
     );
-    expect(rocketsPage).toMatchSnapshot();
+
+    expect(app).toMatchSnapshot();
   });
 
-  test('It should render the Missiosn page', () => {
+  test('It should render the Details', () => {
     const store = createStore();
-    const missionsPage = render(
+    const app = render(
       <Provider store={store}>
-        <Mission />
+        <BrowserRouter>
+          <Details />
+        </BrowserRouter>
       </Provider>,
     );
-    expect(missionsPage).toMatchSnapshot();
-  });
 
-  test('It should render the Profile page', () => {
+    expect(app).toMatchSnapshot();
+  });
+});
+
+describe('App events', () => {
+  test('Click on country item should open details page', () => {
     const store = createStore();
-    const profilePage = render(
+    render(
       <Provider store={store}>
-        <Profile />
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
       </Provider>,
     );
-    expect(profilePage).toMatchSnapshot();
+    fireEvent.click(screen.getByText('Mexico'));
+    expect(screen.getByText("This week's exchange")).toBeInTheDocument();
   });
 });
