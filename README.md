@@ -20,6 +20,8 @@
 [Live Demo Link](https://sprightly-gelato-89a757.netlify.app/)
 
 
+## Install
+
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
