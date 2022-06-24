@@ -11,6 +11,10 @@
 - Frameworks / Libraries: React, Redux
 - Technologies: Eslint, Stylelint, Git, GitHub, APIs
 
+## Screenshots
+![mockup responsivo copia](https://user-images.githubusercontent.com/11634112/175438478-54be2ea2-54fb-499e-bc53-1faef917400b.png)
+
+
 ## Live Demo
 
 [Live Demo Link](https://delightful-llama-d7353f.netlify.app/profile)
