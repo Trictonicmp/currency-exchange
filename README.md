@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://delightful-llama-d7353f.netlify.app/profile)
+[Live Demo Link](https://sprightly-gelato-89a757.netlify.app/)
 
 
 To get a local copy up and running follow these simple example steps.
