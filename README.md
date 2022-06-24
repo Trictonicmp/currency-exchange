@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Currency X change
 
-## Available Scripts
+> Currency X change is a mobile/desktop app that help users compare countries currencies from all around the world, currencyXchange also brings information to users about the last 7 days of every currency, this way, users can have a record on how the currencies are evolving. 
 
-In the project directory, you can run:
 
-### `npm start`
+## Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Languajes: HTML, CSS, Javascript
+- Frameworks / Libraries: React, Redux
+- Technologies: Eslint, Stylelint, Git, GitHub, APIs
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshots
+![mockup responsivo copia](https://user-images.githubusercontent.com/11634112/175438478-54be2ea2-54fb-499e-bc53-1faef917400b.png)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Live Demo
 
-### `npm run build`
+[Live Demo Link](https://sprightly-gelato-89a757.netlify.app/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get a local copy up and running follow these simple example steps.
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* node package manager – to be able to install packages locally.
+* A github Account – to be able to use github actions.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Setup
+* Open the terminal
+* Run ```cd \path\to\where\you\want\your\local\copy```
+* Clone the repo
+  * Run ```git clone https://github.com/Trictonicmp/currency-exchange.git```
+  * Run ```cd currency-exchange```
+* Install dependencies  
+  * Run ```npm install```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Build
+Run ```npm run build```
 
-## Learn More
+### Dev server
+Run ```npm start```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Tests
+Run ```npm test```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+👤 **Amaury Permer**
 
-### Analyzing the Bundle Size
+- GitHub: [@githubhandle](https://github.com/Trictonicmp)
+- LinkedIn: [Amaury Permer](https://www.linkedin.com/in/amaury-permer/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🤝 Contributing
 
-### Making a Progressive Web App
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Feel free to check the [issues page](../../issues/).
 
-### Advanced Configuration
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Give a ⭐️ if you like this project!
 
-### Deployment
+## Acknowledgments
+This App uses the next APIs to get data
+- Rest Countries API: more info [here](https://restcountries.com/)
+- Exchangerate API: more info [here](https://exchangerate.host)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📝 License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.

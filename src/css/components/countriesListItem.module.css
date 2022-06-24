@@ -1,0 +1,83 @@
+.listItem {
+  width: 100%;
+}
+
+.listItem:nth-child(even) {
+  background-color: var(--secondary-background);
+}
+
+.listItem a {
+  background-image: url(../../assets/images/backgroundpattern.png);
+  background-size: 0.5em;
+}
+
+.listItem a:hover {
+  outline: 2px solid var(--body-background);
+}
+
+.detailsIcon {
+  margin-left: -2em;
+  width: 1em;
+  opacity: 0;
+  transition:
+    margin-left 0.2s ease-in,
+    opacity 0.2s ease-in;
+}
+
+.listItem:hover .detailsIcon {
+  margin-left: 0;
+  opacity: 1;
+}
+
+.countryExchangeContainer {
+  flex-basis: 25em;
+  flex-grow: 1;
+}
+
+.countryExchangeContainer p {
+  color: var(--accent-color);
+  width: 100%;
+  text-align: right;
+  font-family: 'Lato', sans-serif;
+}
+
+.pageContainer {
+  padding: 1.5em 1em;
+  display: block;
+  text-decoration: none;
+}
+
+.countryName {
+  font-family: 'Lato', sans-serif;
+  color: var(--text-color);
+  font-weight: lighter;
+  font-size: 1.2em;
+}
+
+.listItemDetails {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.countryFlag {
+  font-size: 2em;
+}
+
+.countryDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.countryExchange {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  color: var(--text-color);
+  gap: 1em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

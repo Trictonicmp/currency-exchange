@@ -1,0 +1,25 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+:root {
+  --main-background: #eb4c89;
+  --secondary-background: #de4781;
+  --accent-color: #b03967;
+  --text-color: white;
+  --body-background: #ff9ec3;
+}
+
+.pageContainer {
+  width: calc(100% - 2em);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section,
+footer {
+  width: 100%;
+}
+
+body {
+  background-color: var(--main-background);
+}

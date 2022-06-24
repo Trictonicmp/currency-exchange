@@ -1,0 +1,1086 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App snapshots It should render the Details 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section>
+        <div
+          class="header"
+        >
+          <div
+            class="pageContainer detailsHeader"
+          >
+            <h3>
+              🇦🇫🇲🇽
+            </h3>
+            <div>
+              <span>
+                Country
+              </span>
+              <h2>
+                Mexico
+              </h2>
+            </div>
+            <div>
+              <span>
+                Currency
+              </span>
+              <h2>
+                MXN
+              </h2>
+            </div>
+            <div>
+              <span>
+                Today's exchange | based on: 1 USD
+              </span>
+              <h2>
+                20.24042
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div
+          class="historyHeader"
+        >
+          <div
+            class="pageContainer"
+          >
+            <button
+              type="button"
+            >
+              <img
+                alt="Go Back"
+                src="next.png"
+                title="Go Back"
+              />
+            </button>
+            <h2>
+              This week's exchange
+            </h2>
+          </div>
+        </div>
+        <ul
+          class="pageContainer pagecontainer"
+        >
+          <li
+            class="weekItem"
+          >
+            <div
+              class="itemDate"
+            >
+              <span>
+                Year - Month - Day
+              </span>
+              <p>
+                2022-06-16
+              </p>
+            </div>
+            <div
+              class="itemDate"
+            >
+              <span>
+                Exchange
+              </span>
+              <p
+                class="itemExchange"
+              >
+                20.316285
+              </p>
+            </div>
+          </li>
+          <li
+            class="weekItem"
+          >
+            <div
+              class="itemDate"
+            >
+              <span>
+                Year - Month - Day
+              </span>
+              <p>
+                2022-06-17
+              </p>
+            </div>
+            <div
+              class="itemDate"
+            >
+              <span>
+                Exchange
+              </span>
+              <p
+                class="itemExchange"
+              >
+                20.423423
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section>
+      <div
+        class="header"
+      >
+        <div
+          class="pageContainer detailsHeader"
+        >
+          <h3>
+            🇦🇫🇲🇽
+          </h3>
+          <div>
+            <span>
+              Country
+            </span>
+            <h2>
+              Mexico
+            </h2>
+          </div>
+          <div>
+            <span>
+              Currency
+            </span>
+            <h2>
+              MXN
+            </h2>
+          </div>
+          <div>
+            <span>
+              Today's exchange | based on: 1 USD
+            </span>
+            <h2>
+              20.24042
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div
+        class="historyHeader"
+      >
+        <div
+          class="pageContainer"
+        >
+          <button
+            type="button"
+          >
+            <img
+              alt="Go Back"
+              src="next.png"
+              title="Go Back"
+            />
+          </button>
+          <h2>
+            This week's exchange
+          </h2>
+        </div>
+      </div>
+      <ul
+        class="pageContainer pagecontainer"
+      >
+        <li
+          class="weekItem"
+        >
+          <div
+            class="itemDate"
+          >
+            <span>
+              Year - Month - Day
+            </span>
+            <p>
+              2022-06-16
+            </p>
+          </div>
+          <div
+            class="itemDate"
+          >
+            <span>
+              Exchange
+            </span>
+            <p
+              class="itemExchange"
+            >
+              20.316285
+            </p>
+          </div>
+        </li>
+        <li
+          class="weekItem"
+        >
+          <div
+            class="itemDate"
+          >
+            <span>
+              Year - Month - Day
+            </span>
+            <p>
+              2022-06-17
+            </p>
+          </div>
+          <div
+            class="itemDate"
+          >
+            <span>
+              Exchange
+            </span>
+            <p
+              class="itemExchange"
+            >
+              20.423423
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`App snapshots It should render the Home 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section>
+        <div
+          class="filtersSection"
+        >
+          <div
+            class="pageContainer pageContainer"
+          >
+            <h2>
+              Base Currency
+            </h2>
+            <select
+              class="select"
+            >
+              <option
+                value="AFN"
+              >
+                AFN - Afghanistan
+              </option>
+              <option
+                value="MXN"
+              >
+                MXN - Mexico
+              </option>
+            </select>
+            <input
+              class="search"
+              placeholder="Search"
+              type="text"
+            />
+          </div>
+        </div>
+        <div
+          class="countriesListContainer"
+        >
+          <ul
+            class="countriesList"
+          >
+            <li
+              class="listItem"
+            >
+              <a
+                class="
+        pageContainer
+        pageContainer
+        listItemDetails
+        "
+                href="/details?country=Afghanistan"
+              >
+                <div
+                  class="countryDetails"
+                >
+                  <span
+                    class="countryFlag"
+                  >
+                    🇦🇫
+                  </span>
+                  <h3
+                    class="countryName"
+                  >
+                    Afghanistan
+                  </h3>
+                </div>
+                <div
+                  class="countryExchangeContainer"
+                >
+                  <p>
+                    Exchange
+                  </p>
+                  <div
+                    class="countryExchange"
+                  >
+                    <span>
+                      1 USD
+                    </span>
+                    =
+                    <span>
+                      89.230209 AFN
+                    </span>
+                  </div>
+                </div>
+                <img
+                  alt=">"
+                  class="detailsIcon"
+                  src="right-arrow.png"
+                />
+              </a>
+            </li>
+            <li
+              class="listItem"
+            >
+              <a
+                class="
+        pageContainer
+        pageContainer
+        listItemDetails
+        "
+                href="/details?country=Mexico"
+              >
+                <div
+                  class="countryDetails"
+                >
+                  <span
+                    class="countryFlag"
+                  >
+                    🇦🇫🇲🇽
+                  </span>
+                  <h3
+                    class="countryName"
+                  >
+                    Mexico
+                  </h3>
+                </div>
+                <div
+                  class="countryExchangeContainer"
+                >
+                  <p>
+                    Exchange
+                  </p>
+                  <div
+                    class="countryExchange"
+                  >
+                    <span>
+                      1 USD
+                    </span>
+                    =
+                    <span>
+                      20.24042 MXN
+                    </span>
+                  </div>
+                </div>
+                <img
+                  alt=">"
+                  class="detailsIcon"
+                  src="right-arrow.png"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section>
+      <div
+        class="filtersSection"
+      >
+        <div
+          class="pageContainer pageContainer"
+        >
+          <h2>
+            Base Currency
+          </h2>
+          <select
+            class="select"
+          >
+            <option
+              value="AFN"
+            >
+              AFN - Afghanistan
+            </option>
+            <option
+              value="MXN"
+            >
+              MXN - Mexico
+            </option>
+          </select>
+          <input
+            class="search"
+            placeholder="Search"
+            type="text"
+          />
+        </div>
+      </div>
+      <div
+        class="countriesListContainer"
+      >
+        <ul
+          class="countriesList"
+        >
+          <li
+            class="listItem"
+          >
+            <a
+              class="
+        pageContainer
+        pageContainer
+        listItemDetails
+        "
+              href="/details?country=Afghanistan"
+            >
+              <div
+                class="countryDetails"
+              >
+                <span
+                  class="countryFlag"
+                >
+                  🇦🇫
+                </span>
+                <h3
+                  class="countryName"
+                >
+                  Afghanistan
+                </h3>
+              </div>
+              <div
+                class="countryExchangeContainer"
+              >
+                <p>
+                  Exchange
+                </p>
+                <div
+                  class="countryExchange"
+                >
+                  <span>
+                    1 USD
+                  </span>
+                  =
+                  <span>
+                    89.230209 AFN
+                  </span>
+                </div>
+              </div>
+              <img
+                alt=">"
+                class="detailsIcon"
+                src="right-arrow.png"
+              />
+            </a>
+          </li>
+          <li
+            class="listItem"
+          >
+            <a
+              class="
+        pageContainer
+        pageContainer
+        listItemDetails
+        "
+              href="/details?country=Mexico"
+            >
+              <div
+                class="countryDetails"
+              >
+                <span
+                  class="countryFlag"
+                >
+                  🇦🇫🇲🇽
+                </span>
+                <h3
+                  class="countryName"
+                >
+                  Mexico
+                </h3>
+              </div>
+              <div
+                class="countryExchangeContainer"
+              >
+                <p>
+                  Exchange
+                </p>
+                <div
+                  class="countryExchange"
+                >
+                  <span>
+                    1 USD
+                  </span>
+                  =
+                  <span>
+                    20.24042 MXN
+                  </span>
+                </div>
+              </div>
+              <img
+                alt=">"
+                class="detailsIcon"
+                src="right-arrow.png"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`App snapshots It should render the app 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header
+        class="header"
+      >
+        <div
+          class="pageContainer"
+        >
+          <a
+            aria-current="page"
+            class="logo active"
+            href="/"
+            title="Go home"
+          >
+            CurrencyXchange
+          </a>
+        </div>
+      </header>
+      <section>
+        <div
+          class="filtersSection"
+        >
+          <div
+            class="pageContainer pageContainer"
+          >
+            <h2>
+              Base Currency
+            </h2>
+            <select
+              class="select"
+            >
+              <option
+                value="AFN"
+              >
+                AFN - Afghanistan
+              </option>
+              <option
+                value="MXN"
+              >
+                MXN - Mexico
+              </option>
+            </select>
+            <input
+              class="search"
+              placeholder="Search"
+              type="text"
+            />
+          </div>
+        </div>
+        <div
+          class="countriesListContainer"
+        >
+          <ul
+            class="countriesList"
+          >
+            <li
+              class="listItem"
+            >
+              <a
+                class="
+        pageContainer
+        pageContainer
+        listItemDetails
+        "
+                href="/details?country=Afghanistan"
+              >
+                <div
+                  class="countryDetails"
+                >
+                  <span
+                    class="countryFlag"
+                  >
+                    🇦🇫
+                  </span>
+                  <h3
+                    class="countryName"
+                  >
+                    Afghanistan
+                  </h3>
+                </div>
+                <div
+                  class="countryExchangeContainer"
+                >
+                  <p>
+                    Exchange
+                  </p>
+                  <div
+                    class="countryExchange"
+                  >
+                    <span>
+                      1 USD
+                    </span>
+                    =
+                    <span>
+                      89.230209 AFN
+                    </span>
+                  </div>
+                </div>
+                <img
+                  alt=">"
+                  class="detailsIcon"
+                  src="right-arrow.png"
+                />
+              </a>
+            </li>
+            <li
+              class="listItem"
+            >
+              <a
+                class="
+        pageContainer
+        pageContainer
+        listItemDetails
+        "
+                href="/details?country=Mexico"
+              >
+                <div
+                  class="countryDetails"
+                >
+                  <span
+                    class="countryFlag"
+                  >
+                    🇦🇫🇲🇽
+                  </span>
+                  <h3
+                    class="countryName"
+                  >
+                    Mexico
+                  </h3>
+                </div>
+                <div
+                  class="countryExchangeContainer"
+                >
+                  <p>
+                    Exchange
+                  </p>
+                  <div
+                    class="countryExchange"
+                  >
+                    <span>
+                      1 USD
+                    </span>
+                    =
+                    <span>
+                      20.24042 MXN
+                    </span>
+                  </div>
+                </div>
+                <img
+                  alt=">"
+                  class="detailsIcon"
+                  src="right-arrow.png"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer
+        class="footer"
+      >
+        <div
+          class="pageContainer"
+        >
+          <p>
+            This Project utilizes both
+            <span
+              class="badge"
+            >
+              Rest Countries API
+            </span>
+            and
+            <span
+              class="badge"
+            >
+              Exchangerate.host API
+            </span>
+            to get countries data and currency exchange data.
+            <br />
+            <br />
+            More info (
+            <a
+              class="badge linkBadge"
+              href="https://restcountries.com/"
+            >
+              Rest Countries
+            </a>
+            <a
+              class="badge linkBadge"
+              href="https://exchangerate.host"
+            >
+              Exchangerate.host
+            </a>
+            )
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="header"
+    >
+      <div
+        class="pageContainer"
+      >
+        <a
+          aria-current="page"
+          class="logo active"
+          href="/"
+          title="Go home"
+        >
+          CurrencyXchange
+        </a>
+      </div>
+    </header>
+    <section>
+      <div
+        class="filtersSection"
+      >
+        <div
+          class="pageContainer pageContainer"
+        >
+          <h2>
+            Base Currency
+          </h2>
+          <select
+            class="select"
+          >
+            <option
+              value="AFN"
+            >
+              AFN - Afghanistan
+            </option>
+            <option
+              value="MXN"
+            >
+              MXN - Mexico
+            </option>
+          </select>
+          <input
+            class="search"
+            placeholder="Search"
+            type="text"
+          />
+        </div>
+      </div>
+      <div
+        class="countriesListContainer"
+      >
+        <ul
+          class="countriesList"
+        >
+          <li
+            class="listItem"
+          >
+            <a
+              class="
+        pageContainer
+        pageContainer
+        listItemDetails
+        "
+              href="/details?country=Afghanistan"
+            >
+              <div
+                class="countryDetails"
+              >
+                <span
+                  class="countryFlag"
+                >
+                  🇦🇫
+                </span>
+                <h3
+                  class="countryName"
+                >
+                  Afghanistan
+                </h3>
+              </div>
+              <div
+                class="countryExchangeContainer"
+              >
+                <p>
+                  Exchange
+                </p>
+                <div
+                  class="countryExchange"
+                >
+                  <span>
+                    1 USD
+                  </span>
+                  =
+                  <span>
+                    89.230209 AFN
+                  </span>
+                </div>
+              </div>
+              <img
+                alt=">"
+                class="detailsIcon"
+                src="right-arrow.png"
+              />
+            </a>
+          </li>
+          <li
+            class="listItem"
+          >
+            <a
+              class="
+        pageContainer
+        pageContainer
+        listItemDetails
+        "
+              href="/details?country=Mexico"
+            >
+              <div
+                class="countryDetails"
+              >
+                <span
+                  class="countryFlag"
+                >
+                  🇦🇫🇲🇽
+                </span>
+                <h3
+                  class="countryName"
+                >
+                  Mexico
+                </h3>
+              </div>
+              <div
+                class="countryExchangeContainer"
+              >
+                <p>
+                  Exchange
+                </p>
+                <div
+                  class="countryExchange"
+                >
+                  <span>
+                    1 USD
+                  </span>
+                  =
+                  <span>
+                    20.24042 MXN
+                  </span>
+                </div>
+              </div>
+              <img
+                alt=">"
+                class="detailsIcon"
+                src="right-arrow.png"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer
+      class="footer"
+    >
+      <div
+        class="pageContainer"
+      >
+        <p>
+          This Project utilizes both
+          <span
+            class="badge"
+          >
+            Rest Countries API
+          </span>
+          and
+          <span
+            class="badge"
+          >
+            Exchangerate.host API
+          </span>
+          to get countries data and currency exchange data.
+          <br />
+          <br />
+          More info (
+          <a
+            class="badge linkBadge"
+            href="https://restcountries.com/"
+          >
+            Rest Countries
+          </a>
+          <a
+            class="badge linkBadge"
+            href="https://exchangerate.host"
+          >
+            Exchangerate.host
+          </a>
+          )
+        </p>
+      </div>
+    </footer>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -1,0 +1,44 @@
+.pagecontainer {
+  margin-top: 1em;
+  border-bottom: 3em solid var(--secondary-background);
+}
+
+.weekItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-image: url(../../assets/images/backgroundpattern.png);
+  background-size: 0.5em;
+  outline: 0 solid var(--body-background);
+  transition:
+    transform 0.2s ease-in,
+    outline 0.2s ease-in;
+}
+
+.weekItem:nth-child(odd) {
+  background-color: var(--secondary-background);
+}
+
+.weekItem:hover {
+  outline: 1px solid var(--body-background);
+  transform: scale(1.01);
+}
+
+.itemExchange {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: var(--text-color);
+  font-size: 1.2em;
+}
+
+.itemDate span {
+  font-family: 'Lato', sans-serif;
+  color: var(--body-background);
+}
+
+.itemDate p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5em;
+  color: var(--text-color);
+  text-align: center;
+}
