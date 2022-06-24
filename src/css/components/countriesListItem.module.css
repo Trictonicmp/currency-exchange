@@ -6,13 +6,13 @@
   background-color: var(--secondary-background);
 }
 
-.listItem a:hover {
-  outline: 2px solid var(--body-background);
-}
-
 .listItem a {
   background-image: url(../../assets/images/backgroundpattern.png);
   background-size: 0.5em;
+}
+
+.listItem a:hover {
+  outline: 2px solid var(--body-background);
 }
 
 .detailsIcon {

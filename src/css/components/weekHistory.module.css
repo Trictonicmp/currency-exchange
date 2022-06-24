@@ -10,7 +10,7 @@
   padding: 1em;
   background-image: url(../../assets/images/backgroundpattern.png);
   background-size: 0.5em;
-  outline: 0px solid var(--body-background);
+  outline: 0 solid var(--body-background);
   transition-property: transform, outline;
   transition-duration: 0.2s, 0.2s;
   transition-timing-function: ease-in, ease-in;

@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import countries from '../redux/countries/countries';
 import appStatus from '../redux/app/appStatus';
 import baseCurrency from '../redux/countries/baseCurrency';
-import filteredCountries, { getFilteredCountries } from '../redux/countries/filteredCountries';
+import filteredCountries from '../redux/countries/filteredCountries';
 import selectedCountry from '../redux/selectedItem/selectedITem';
 import App from '../App';
 import Home from '../components/pages/Home';
