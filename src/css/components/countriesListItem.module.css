@@ -76,7 +76,7 @@
 .countryExchange {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   color: var(--text-color);
   gap: 1em;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
