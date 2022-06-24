@@ -11,9 +11,9 @@
   background-image: url(../../assets/images/backgroundpattern.png);
   background-size: 0.5em;
   outline: 0 solid var(--body-background);
-  transition-property: transform, outline;
-  transition-duration: 0.2s, 0.2s;
-  transition-timing-function: ease-in, ease-in;
+  transition:
+    transform 0.2s ease-in,
+    outline 0.2s ease-in;
 }
 
 .weekItem:nth-child(odd) {

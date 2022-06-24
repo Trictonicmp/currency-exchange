@@ -19,9 +19,9 @@
   margin-left: -2em;
   width: 1em;
   opacity: 0;
-  transition-property: margin-left, opacity;
-  transition-duration: 0.2s, 0.2s;
-  transition-timing-function: ease-in, ease-in;
+  transition:
+    margin-left 0.2s ease-in,
+    opacity 0.2s ease-in;
 }
 
 .listItem:hover .detailsIcon {
