@@ -53,7 +53,7 @@ Run ```npm test```
 
 👤 **Amaury Permer**
 
-- GitHub: [@githubhandle](https://github.com/Trictonicmp)
+- GitHub: [@Trictonicmp](https://github.com/Trictonicmp)
 - LinkedIn: [Amaury Permer](https://www.linkedin.com/in/amaury-permer/)
 
 ## 🤝 Contributing
